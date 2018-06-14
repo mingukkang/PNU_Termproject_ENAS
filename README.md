@@ -52,7 +52,7 @@ Efficient Neural Architecture Search for Windows users.
 
 <main_controller_child_trainer.py>를 학습한 후에 얻은 child_arc_seq는 아래와 같습니다.
 
-**MNIST**
+#### MNIST
 ```
 "1 2 1 3 0 1 0 4 1 1 1 1 0 1 0 1 1 0 0 1 0 1 0 4 1 0 2 0 0 3 1 1 0 0 0 0 4 1 1 0"
 ```
@@ -61,7 +61,7 @@ Efficient Neural Architecture Search for Windows users.
 
 <br/>![사진](https://github.com/MINGUKKANG/PNU_Termproject_ENAS/blob/master/images/MNIST_Reduction_cell.png)
 
-**CIFAR 10**
+#### CIFAR 10
 ```
 "1 0 1 1 1 1 0 0 1 1 0 0 0 3 0 3 1 3 1 1 1 1 0 3 0 3 0 3 1 3 0 1 1 3 0 2 0 3 1 0"
 ```
