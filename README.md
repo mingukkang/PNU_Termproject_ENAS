@@ -30,43 +30,46 @@ Efficient Neural Architecture Search for Windows users.
 
 1. 레포지토리에 있는 MNIST 데이터를 아래의 사진과 같이 압축해제 해줍니다.
 
-(개인 데이터를 쓰기위해서는 폴더 안에 이미지만 교체해주면 됨)
+   (개인 데이터를 쓰기위해서는 폴더 안에 이미지만 교체해주면 됨)
 
 <br/>![사진](https://github.com/MINGUKKANG/PNU_Termproject_ENAS/blob/master/images/unpack.PNG)
 
-2. 아래의 코드를 자신의 상황에 맞게 재작성해줍니다.
+2. 아래의 코드를 자신의 상황에 맞게 재작성 해줍니다.
 
 ```
-<main_controller_child_trainer.py and main_child_trainer.py>
+<main_controller_child_trainer.py , main_child_trainer.py>
 
 DEFINE_integer("channel",재작성, "MNIST: 1, Cifar10: 3")
 DEFINE_integer("img_size", 재작성, "enlarge image size")
 DEFINE_integer("n_aug_img",재작성 , "if 2: num_img: 55000 -> aug_img: 110000, elif 1: False")
 
 예)
-
 DEFINE_integer("channel",1, "MNIST: 1, Cifar10: 3")
 DEFINE_integer("img_size",32, "enlarge image size")
 DEFINE_integer("n_aug_img",1, "if 2: num_img: 55000 -> aug_img: 110000, elif 1: False")
 ```
-(네트워크를 찾아줄 때는 n_aug_img = 1, Child network를 학습시킬 때는 메모리 상태에 따라 선택하는 것을 권장)
+※ 네트워크를 찾아줄 때는 n_aug_img = 1, Child network를 학습시킬 때는 메모리 상태에 따라 선택하는 것을 권장합니다.
 
-3. 끝난후에 Anaconda Prompt에서 해당 프로젝트 디렉토리에 진입한 다음 아래의 코드를 작성하여 코드를 실행시켜 줍니다.
+<br/>3. 끝난후에 Anaconda Prompt에서 해당 프로젝트 디렉토리에 진입한 다음 아래의 코드를 작성하여 코드를 실행시켜 줍니다.
 
 ```
 python main_controller_child_trainer.py
 ```
 
-4. 학습이 완료되어 Child network의 후보인 child_arc_seq를 선택했다면 Anaconda prompt에 다음과 같은 코드를 입력하여 실행시켜줍니다.
+4. 학습이 완료되어 Child network의 후보인 child_arc_seq를 선택했다면
+
+Anaconda prompt에 다음과 같은 코드를 입력하여 실행시켜줍니다.
 ```
 python main_child_trainer.py --child_fixed_arc "자신의 결과"
 
-예시
+예)
 
 Case of MNIST 
+
 python main_child_trainer.py --child_fixed_arc "1 2 1 3 0 1 0 4 1 1 1 1 0 1 0 1 1 0 0 1 0 1 0 4 1 0 2 0 0 3 1 1 0 0 0 0 4 1 1 0"
 
 Case of Cifar 10
+
 python main_child_trainer.py --child_fixed_arc "1 0 1 1 1 1 0 0 1 1 0 0 0 3 0 3 1 3 1 1 1 1 0 3 0 3 0 3 1 3 0 1 1 3 0 2 0 3 1 0"
 ```
 
