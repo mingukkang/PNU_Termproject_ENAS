@@ -94,7 +94,7 @@ Test Accuracy :
 ### 4. Schematic of Networks
 
 #### 1. Controller Network
-<br/>![사진](https://github.com/MINGUKKANG/PNU_Termproject_ENAS/blob/master/images/Final_structure_child_network.png)
+<br/>![사진](https://github.com/MINGUKKANG/PNU_Termproject_ENAS/blob/master/images/Controller.PNG)
 
 #### 2. Child Network
-<br/>![사진](https://github.com/MINGUKKANG/PNU_Termproject_ENAS/blob/master/images/Final_structure_child_network.png)
+<br/>![사진](https://github.com/MINGUKKANG/PNU_Termproject_ENAS/blob/master/images/Child_Network_img.png)
