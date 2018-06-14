@@ -114,3 +114,40 @@ Test Accuracy :
 1. 선택한 Child Network를 우리가 원하는 Epoch만큼 학습시켜준다.
 (Momentum Optimization을 사용하였고, Cosine wave를 통해 lr를 주기적으로 변화시켜 주었다.)
 ```
+
+## 5. Augmentation
+
+```python
+def aug(image, idx):
+    augmentation_dic = {0: enlarge(image, 1.2),
+                        1: rotation(image),
+                        2: random_bright_contrast(image),
+                        3: Flip(image)}
+
+    image = augmentation_dic[idx]
+    return image
+```
+
+함수 enlarge, rotation, random_bright_contrast and Flip는 cv2를 이용해 작성되었다.
+
+MNIST데이터의 경우 Flip을 사용하지 않았다. 
+
+### 2. Images
+
+#### MNIST
+![사진9](https://github.com/MINGUKKANG/PNU_Termproject_ENAS/blob/master/images/MNIST_AUG.png)
+
+#### CIFAR10
+![사진9](https://github.com/MINGUKKANG/PNU_Termproject_ENAS/blob/master/images/Cifar10_AUG.png)
+
+## 참조
+**Paper: https://arxiv.org/abs/1802.03268**
+
+**Autors' implementation: https://github.com/melodyguan/enas**
+
+**Data Pipeline: https://github.com/MINGUKKANG/MNIST-Tensorflow-Code**
+
+## License
+All rights related to this code are reserved to the author of ENAS
+
+(Hieu Pham, Melody Y. Guan, Barret Zoph, Quoc V. Le, Jeff Dean)
