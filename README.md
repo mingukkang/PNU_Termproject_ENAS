@@ -26,3 +26,8 @@ Efficient Neural Architecture Search for Windows users.
 2. Windows 10에서도 실행 할 수 있고
 
 3. Data Augmentation 코드를 추가하여 더욱 좋은 결과를 얻을 수 있도록 만들었습니다.
+
+
+## 2. 사용한 데이터셋
+- MNIST: 28x28x1, 70,000장(Train: 55,000장, Validation: 5,000장, Test: 10,000장)
+- CIFAR 10: 32x32x3, 65,000장(Train: 50,000장, Validation: 5,000장, Test: 10,000장)
