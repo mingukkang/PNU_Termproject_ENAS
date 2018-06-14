@@ -163,6 +163,8 @@ Test Accuracy :
 
 ## 5. Augmentation
 
+### 1. Code
+
 ```python
 def aug(image, idx):
     augmentation_dic = {0: enlarge(image, 1.2),
