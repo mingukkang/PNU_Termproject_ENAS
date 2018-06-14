@@ -128,9 +128,8 @@ def aug(image, idx):
     return image
 ```
 
-함수 enlarge, rotation, random_bright_contrast and Flip는 cv2를 이용해 작성되었다.
-
-MNIST데이터의 경우 Flip을 사용하지 않았다. 
+함수 enlarge, rotation, random_bright_contrast and Flip는 cv2를 이용해 작성되었습니다.
+(※ MNIST데이터의 경우 Flip을 사용하지 않았음.) 
 
 ### 2. Images
 
