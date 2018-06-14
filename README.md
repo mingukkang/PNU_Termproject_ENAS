@@ -56,9 +56,7 @@ DEFINE_integer("n_aug_img",1, "if 2: num_img: 55000 -> aug_img: 110000, elif 1: 
 python main_controller_child_trainer.py
 ```
 
-4. 학습이 완료되어 Child network의 후보인 child_arc_seq를 선택했다면
-
-Anaconda prompt에 다음과 같은 코드를 입력하여 실행시켜줍니다.
+4. 학습이 끝나 Child network의 후보인 child_arc_seq를 선택했다면 prompt에 다음과 같은 코드를 입력하여 실행시켜줍니다.
 ```
 python main_child_trainer.py --child_fixed_arc "자신의 결과"
 
