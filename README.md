@@ -1,9 +1,11 @@
 # Efficient Neural Architecture Search via parameter sharing.
 
 1. 프로젝트 개요
- - 프로젝트 명: Efficient Neural Architecture Search for Windows users.
- - 연구목적
- 
+
+**프로젝트 명**
+Efficient Neural Architecture Search for Windows users.
+
+**연구목적**
 적절한 뉴럴네트워크를 디자인 하기위해서는 네트워크에 대한 많은 지식과 경험이 필요합니다.
 
 하지만 ENAS를 사용하면 네트워크에 대한 지식없이도 높은 성능의 뉴럴네트워크를 손 쉽게 디자인 할 수 있는데 현재(2018.06.14) 공개된 ENAS는 다음과 같은 문제가 존재합니다.
