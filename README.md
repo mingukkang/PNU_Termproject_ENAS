@@ -88,5 +88,5 @@ Test Accuracy : 99.64%
 
 ```
 CIFAR 10(will be updated ASAP)
-Test Accuracy: 
+Test Accuracy : 
 ```
