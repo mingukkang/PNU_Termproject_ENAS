@@ -98,3 +98,19 @@ Test Accuracy :
 
 #### 2. Child Network
 <br/>![사진](https://github.com/MINGUKKANG/PNU_Termproject_ENAS/blob/master/images/Child_Network_img.png)
+
+### 5. Summary of Learning Mechanism
+<main_child_controller_trainer.py>
+
+```
+1. Child Network를 1 Epoch만큼 학습시킨다.
+2. Controller를 Adam Optimization을 이용하여 'FLAGS.controller_train_steps x FLAGS.controller_num_aggregate'번 학습시킨다.
+3. 1과 2를 원하는 만큼 반복한다.(160Epoch)
+4. 제안된 10개의 네트워크 중 가장 Validation Accuracy가 높은 모델을 선정한다.
+```
+
+<main_child_trainer.py>
+```
+1. 선택한 Child Network를 우리가 원하는 Epoch만큼 학습시켜준다.
+(Momentum Optimization을 사용하였고, Cosine wave를 통해 lr를 주기적으로 변화시켜 주었다.)
+```
