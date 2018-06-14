@@ -30,4 +30,18 @@ Efficient Neural Architecture Search for Windows users.
 
 ## 2. 사용한 데이터셋
 - MNIST: 28x28x1, 70,000장(Train: 55,000장, Validation: 5,000장, Test: 10,000장)
+
 - CIFAR 10: 32x32x3, 65,000장(Train: 50,000장, Validation: 5,000장, Test: 10,000장)
+
+※ 데이터의 directory만 지정해준다면 자신의 데이터를 쉽게 인가할 수 있습니다.
+
+## 3. 환경
+- OS: Window 10(Ubuntu 16.04 is possible)
+
+- Graphic Card /RAM : 1080TI /32G
+
+- Python 3.5
+
+- Tensorflow-gpu version:  1.4.0rc2 
+
+- OpenCV 3.4.1
