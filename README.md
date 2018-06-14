@@ -1,5 +1,3 @@
-# Efficient Neural Architecture Search via parameter sharing.
-
 ## 1. 프로젝트 개요
 
 **프로젝트 명**
