@@ -48,6 +48,8 @@ Efficient Neural Architecture Search for Windows users.
 
 ## 4. 실험 및 결과 요약
 
+### 1. Micro search space에서 발견된 ENAS Cells
+
 <main_controller_child_trainer.py>를 학습한 후에 얻은 child_arc_seq는 아래와 같습니다.
 
 **MNIST**
@@ -68,3 +70,23 @@ Efficient Neural Architecture Search for Windows users.
 
 <br/>![사진](https://github.com/MINGUKKANG/PNU_Termproject_ENAS/blob/master/images/CIFAR10_Reduction_cell.png)
 
+### 2. 최종 Child Network의 구조
+
+#### MNIST
+<br/>![사진](https://github.com/MINGUKKANG/PNU_Termproject_ENAS/blob/master/images/MNIST_Final.png)
+
+#### CIFAR 10
+<br/>![사진](https://github.com/MINGUKKANG/PNU_Termproject_ENAS/blob/master/images/Final_structure_child_network.png)
+
+### 3. Test Accuracy
+
+```
+MNIST
+When n_aug_img is 2
+Test Accuracy : 99.64% 
+```
+
+```
+CIFAR 10(will be updated ASAP)
+Test Accuracy: 
+```
