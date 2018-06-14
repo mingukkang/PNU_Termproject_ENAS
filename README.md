@@ -1,6 +1,6 @@
 ## 1. 프로젝트 개요
 
-You can see the full description and English Version of This project below link!
+You can see the full description and English Version of this project:
 
 https://github.com/MINGUKKANG/ENAS-Tensorflow
 
